@@ -74,12 +74,6 @@ button {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: white;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-}
-@media screen and (min-width: 769px) {
-  button {
-    font-size: 1.3rem;
-  }
 }
 
 /*-------------------------------------------------------------------------*/
@@ -109,7 +103,7 @@ button {
   background: #ececec;
   opacity: 0.8;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 @media screen and (min-width: 769px) {
   .localisation {
@@ -118,7 +112,7 @@ button {
 }
 .localisation__logo {
   font-size: 16px;
-  width: 35px;
+  width: 10px;
 }
 @media screen and (min-width: 769px) {
   .localisation__logo {
@@ -126,16 +120,22 @@ button {
   }
 }
 .localisation__txt {
-  border: none;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  padding: 5px 10px;
   background: none;
   font-size: 17px;
-  width: 140px;
+  width: 160px;
 }
 @media screen and (min-width: 769px) {
   .localisation__txt {
     font-size: 22px;
     width: 180px;
   }
+}
+.localisation :focus {
+  background: #f9f9f9;
+  opacity: 5;
 }
 
 /*--------------------*/
@@ -304,6 +304,8 @@ button {
   margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 2px 5px 6px #e6e6e6;
+  transform: scale(1);
+  transition: transform 250ms;
 }
 @media screen and (min-width: 460px) {
   .carte-resto {
@@ -339,7 +341,7 @@ button {
   margin-left: auto;
   margin-right: 13px;
   color: #3c8172;
-  background: #a3e6d7;
+  background: #99E2D0;
   width: 74px;
   margin-top: -253px;
   text-align: center;
@@ -348,6 +350,9 @@ button {
   font-size: 13px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+.carte-resto:hover {
+  transform: scale(1.05);
 }
 
 /*----------------------------------------*/
@@ -491,9 +496,18 @@ button {
   padding-right: 20px;
   border: none;
   border-radius: 50px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  cursor: pointer;
+  transition: transform 250ms;
 }
-.navigation__bouton a {
-  color: #FFF;
+@media screen and (min-width: 769px) {
+  .navigation__bouton {
+    font-size: 1.3rem;
+  }
+}
+.navigation__bouton:hover {
+  transform: scale(1.15);
+  background: linear-gradient(30deg, #99E2D0, #9356DC);
 }
 
 /*# sourceMappingURL=style.css.map */

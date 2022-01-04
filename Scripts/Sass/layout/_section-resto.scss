@@ -1,0 +1,74 @@
+/*----------------------------------------*/
+/* SECTION RESTO */
+/*----------------------------------------*/
+
+.resto{
+    padding-top: 50px;
+    background: $background-secondary;
+    padding-bottom: 40px;
+    h2{
+        margin-left:   20px;
+        margin-bottom: 20px;
+    }
+    &__liste{
+        @media screen and (min-width: 426px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+.carte-resto{
+    max-width: 400px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    background: $background-primary;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 6px rgb(230 230 230);
+    @media screen and (min-width: 460px) {
+        max-width: 500px;
+        min-width: 210px;
+        width: 40%;
+        margin-left:  5px;
+        margin-right: 5px;
+    }
+    &__image{
+        width: 100%;
+        height: 100%;
+    }
+    &__description{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -80px;
+        padding-left: 10px;
+        & p{
+            font-size: 17px;
+            margin-top: -10px;
+        }
+    }
+    &__logo{
+        margin-right: 20px;
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    &__nouv{
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: 13px;
+        color: #3c8172;
+        background: #a3e6d7;
+        width: 74px;
+        margin-top: -253px;
+        text-align: center;
+        & p{
+            font-size: 13px;
+            padding-top:    5px;
+            padding-bottom: 5px;
+        }
+    }
+}

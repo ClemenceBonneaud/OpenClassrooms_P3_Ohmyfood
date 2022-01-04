@@ -1,0 +1,66 @@
+/*----------------------------------------*/
+/* PRESENTATION */
+/*----------------------------------------*/
+
+
+
+
+
+/*--------------------*/
+/* PRESENTATION-LOCALISATION */
+
+.localisation{
+    height: 35px;
+    background: $background-tertiary;
+    opacity: 0.8;
+    text-align: center;
+    padding-top: 15px;
+    @media screen and (min-width: 769px) {
+        height: 50px;
+    }
+    &__logo{
+        font-size: 16px;
+        width: 35px;
+        @media screen and (min-width: 769px) {
+            font-size: 30px;
+        }
+    }
+    &__txt{
+        border: none;
+        background: none;
+        font-size: 17px;
+        width: 140px;
+        @media screen and (min-width: 769px) {
+            font-size: 22px;
+            width: 180px;
+        }
+    }
+}
+
+
+
+
+
+/*--------------------*/
+/* PRESENTATION-NAVIGATION */
+
+.navigation{
+    height: 260px;
+    background: $background-secondary;
+    padding-top: 50px;
+    text-align: center;
+    @media screen and (min-width: 426px) and (max-width: 768px) {
+        br {
+            display: none;
+        }
+        height: 250px;
+        padding-left:  10%;
+        padding-right: 10%;
+    }
+    @media screen and (min-width: 769px) {
+        br {
+            display: none;
+        }
+        height: 250px;
+    }
+}

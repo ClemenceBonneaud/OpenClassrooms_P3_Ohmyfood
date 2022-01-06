@@ -15,3 +15,14 @@
     }
 }
 
+.head__logo{
+    position: absolute;
+    margin-top:  20px;
+    margin-left: 20px;
+    font-size: 20px;
+    @media screen and (min-width: 769px) {
+        font-size: 27px;
+        margin-top: 25px;
+        margin-right: 50px;
+    }
+}

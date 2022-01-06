@@ -22,7 +22,8 @@
         font-size: 16px;
         width: 10px;
         @media screen and (min-width: 769px) {
-            font-size: 30px;
+            font-size: 25px;
+            margin-right: 20px;
         }
     }
     &__txt{
@@ -34,7 +35,8 @@
         width: 160px;
         @media screen and (min-width: 769px) {
             font-size: 22px;
-            width: 180px;
+            width: 200px;
+            margin-top: 2px;
         }
     }
     & :focus{
@@ -55,6 +57,9 @@
     background: $background-secondary;
     padding-top: 50px;
     text-align: center;
+    p{
+        font-weight: lighter;
+    }
     @media screen and (min-width: 426px) and (max-width: 768px) {
         br {
             display: none;

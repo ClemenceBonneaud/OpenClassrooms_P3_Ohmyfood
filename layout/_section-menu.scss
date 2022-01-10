@@ -1,0 +1,154 @@
+/*----------------------------------------*/
+/* SECTION MENU */
+/*----------------------------------------*/
+
+
+
+
+/*----------------------------------------*/
+/* SECTION MENU - GENERAL */
+
+.section-menu{
+    background: $background-secondary;
+    padding-top: 10px;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -40px;
+    position: relative;
+    &__titre{
+        display: flex;
+        justify-content: space-between;
+        padding-left:  20px;
+        padding-right: 30px;
+    }
+    &__liste{
+        margin-bottom: 40px;
+        &:hover > h4:after{
+            transform: scaleX(1);
+        }
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+/*----------------------------------------*/
+/* SECTION MENU - MENU */
+
+.menu{
+    &__logo {
+        background-color: $background-secondary;
+        margin-left: -10%;
+        @media screen and (min-width: 769px) and (max-width: 1440px) {
+            font-size: 40px;
+        }
+        @media screen and (min-width: 1441px) {
+            font-size: 50px;
+        }
+    }
+    &__titre{
+        margin-left: 20px;
+        width: 30px;
+        padding-bottom: 3px;
+        border-bottom: 3px solid $colour-tertiary;
+    }
+    &__liste{
+        background: $background-primary;
+        box-shadow: 2px 5px 6px rgb(230 230 230);
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        max-width: 500px;
+        width: 90%;
+        margin-left:  auto;
+        margin-right: auto;
+        @media screen and (min-width: 570px) {
+            margin-left: 20px;
+        }
+        @media screen and (min-width: 769px) {
+            margin-left: 130px;
+        }
+    }
+    &__choix {
+        display: flex;
+        border-radius: 0px 15px 15px 0px;
+        overflow: hidden;
+        width: 230px;
+    }
+    &__nom {
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        p{
+            font-size: 15px;
+            font-weight: lighter;
+            margin-top: 0px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            @media screen and (min-width: 769px) {
+                font-size: 20px;
+            }
+            @media screen and (min-width: 1440px) {
+                font-size: 23px;
+            }
+        }
+        h3{
+            font-size: 17px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            overflow: hidden;
+            text-overflow: fade(10px);
+            @media screen and (min-width: 769px) {
+                font-size: 22px;
+            }
+            @media screen and (min-width: 1440px) {
+                font-size: 25px;
+            }
+        }
+    }
+    &__prix {
+        margin-top: 20px;
+        margin-right: 10px;
+        padding-left: 60px;
+        p {
+            font-size: 13px;
+            @media screen and (min-width: 769px) {
+                font-size: 18px;
+            }
+            @media screen and (min-width: 1440px) {
+                font-size: 21px;
+            }
+        }
+    }
+    &__validation {
+        height: 100%;
+        width: 60px;
+        margin-right: 0px;
+        background: $colour-tertiary;
+        border-radius: inherit;
+    }
+    &__val-logo {
+        font-size: 20px;
+        margin-top: 23px;
+        color: #FFF;
+    }
+}
+
+
+
+
+
+/*----------------------------------------*/
+/* SECTION MENU - BOUTON */
+
+.bouton__commander{
+    margin-left:  auto;
+    margin-right: auto;
+    font-size: 20px;
+}

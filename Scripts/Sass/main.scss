@@ -8,6 +8,10 @@
  *
  * OUTILS
  * Variables........................... Variables utiles (couleurs)
+ * Animations.......................... Animations des pages et des éléments
+ *
+ * PAGES 
+ * Loading............................. Page de chargement
  *
  * BASE
  * Global.............................. Styles de la page
@@ -15,9 +19,10 @@
  *
  * LAYOUTS
  * Header.............................. Partie haut de page
- * Section Présentation................ Partie localisation et présentation
- * Section Fonctionnement.............. Partie explication du fonctionnement
- * Section Restaurants................. Partie cartes restaurant
+ * Section Présentation................ Partie localisation et présentation - page d'accueil
+ * Section Fonctionnement.............. Partie explication du fonctionnement - page d'accueil
+ * Section Restaurants................. Partie cartes restaurant - page d'accueil
+ * Section Menu........................ Partie du détail des menus - pages menus
  * Footer.............................. Partie pied de page
  *
  * COMPOSANTS
@@ -31,6 +36,8 @@
 
 
 @import "utils/variables";
+@import "utils/animations";
+@import "pages/loading";
 @import "base/global";
 @import "base/typography";
 @import "layout/header";

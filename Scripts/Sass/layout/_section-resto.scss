@@ -63,18 +63,40 @@
         }
     }
     &__logo{
+        display: block;
+        position: absolute;
+        margin-top: -50px;
+        margin-left:  85%;
         margin-right: 20px;
-        margin-top: 30px;
         font-size: 24px;
+        @media screen and (min-width: 460px) and (max-width: 768px){
+            font-size: 26px;
+            margin-top: -60px;
+        }
         @media screen and (min-width: 769px) {
-            margin-top: 20px;
             font-size: 27px;
+            margin-top: -60px;
+        }
+    }
+    &__logo-nouv{
+        display: block;
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 85%;
+        margin-right: 20px;
+        @media screen and (min-width: 460px) and (max-width: 768px){
+            font-size: 26px;
+            margin-top: 190px;
+        }
+        @media screen and (min-width: 769px) {
+            font-size: 27px;
+            margin-top: 180px;
         }
     }
     &__nouv{
         display: block;
         position: relative;
-        margin-left: auto;
+        margin-left:  auto;
         margin-right: 13px;
         color: #3c8172;
         background: $colour-tertiary;
@@ -91,6 +113,9 @@
                 padding-top:    8px;
                 padding-bottom: 8px;
             }
+        }
+        @media screen and (min-width: 460px) and (max-width: 768px) {
+            margin-top: -300px;
         }
         @media screen and (min-width: 769px) {
             width: 90px;

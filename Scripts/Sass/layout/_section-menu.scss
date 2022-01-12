@@ -5,7 +5,7 @@
 
 
 
-/*----------------------------------------*/
+/*--------------------*/
 /* SECTION MENU - GENERAL */
 
 .section-menu{
@@ -22,9 +22,6 @@
     }
     &__liste{
         margin-bottom: 40px;
-        &:hover > h4:after{
-            transform: scaleX(1);
-        }
     }
     nav{
         display: flex;
@@ -35,11 +32,17 @@
 
 
 
-/*----------------------------------------*/
+/*--------------------*/
 /* SECTION MENU - MENU */
 
+.overflow-ellipsis { /* Texte (titre et paragraphe) qui doit être rogné */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .menu{
-    &__logo {
+    &__logo { /* Logo coeur */
         background-color: $background-secondary;
         margin-left: -10%;
         @media screen and (min-width: 769px) and (max-width: 1440px) {
@@ -49,18 +52,20 @@
             font-size: 50px;
         }
     }
-    &__titre{
+    &__titre{ /* entrée, plat, dessert */
         margin-left: 20px;
         width: 30px;
         padding-bottom: 3px;
         border-bottom: 3px solid $colour-tertiary;
     }
-    &__liste{
+    &__liste{ /* Contient plats (h3/p) prix et coche */
+        display: flex;
+        justify-content: stretch;
+        overflow: hidden;
+        position: relative;
         background: $background-primary;
         box-shadow: 2px 5px 6px rgb(230 230 230);
         border-radius: 15px;
-        display: flex;
-        justify-content: space-between;
         padding-left: 10px;
         margin-bottom: 15px;
         max-width: 500px;
@@ -74,23 +79,28 @@
             margin-left: 130px;
         }
     }
-    &__choix {
+    &__choix { /* Contient prix et coche */
         display: flex;
         border-radius: 0px 15px 15px 0px;
         overflow: hidden;
-        width: 230px;
+        width: 200px;
+        position: absolute;
+        right: -130px;
+        height: 100%;
+        @media screen and (min-width: 769px) {
+            right: -120px;
+        }
+        @media screen and (min-width: 1440px) {
+            right: -115px;
+        }
     }
-    &__nom {
-        display: flex;
-        flex-direction: column;
-        white-space: nowrap;
+    &__nom { /* Contient nom du plat (h3/p) */
+        width: 80%;
         p{
             font-size: 15px;
             font-weight: lighter;
-            margin-top: 0px;
+            margin-top:    0px;
             margin-bottom: 15px;
-            overflow: hidden;
-            text-overflow: ellipsis;
             @media screen and (min-width: 769px) {
                 font-size: 20px;
             }
@@ -102,8 +112,6 @@
             font-size: 17px;
             margin-top: 15px;
             margin-bottom: 5px;
-            overflow: hidden;
-            text-overflow: fade(10px);
             @media screen and (min-width: 769px) {
                 font-size: 22px;
             }
@@ -113,9 +121,9 @@
         }
     }
     &__prix {
-        margin-top: 20px;
-        margin-right: 10px;
-        padding-left: 60px;
+        margin-top:   20px;
+        margin-left:  30px;
+        margin-right: 20px;
         p {
             font-size: 13px;
             @media screen and (min-width: 769px) {
@@ -126,17 +134,21 @@
             }
         }
     }
-    &__validation {
+    &__validation { /* Coche */
         height: 100%;
         width: 60px;
-        margin-right: 0px;
+        margin-right: -60px;
         background: $colour-tertiary;
-        border-radius: inherit;
+        border-radius: 0px 15px 15px 0px;
     }
-    &__val-logo {
+    &__val-logo { /* Logo de coche */
         font-size: 20px;
-        margin-top: 23px;
+        margin-top: 28px;
         color: #FFF;
+        @media screen and (min-width: 769px) {
+            font-size: 24px;
+            margin-top: 30px;
+        }
     }
 }
 
@@ -144,10 +156,10 @@
 
 
 
-/*----------------------------------------*/
+/*--------------------*/
 /* SECTION MENU - BOUTON */
 
-.bouton__commander{
+.bouton__commander{ /* Placement du bouton */
     margin-left:  auto;
     margin-right: auto;
     font-size: 20px;
